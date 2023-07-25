@@ -10,9 +10,9 @@
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/inicio/acerca-denosotros.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center">
 
-        <h2>Acerca de nosotros</h2>
+        <h2>Nosotros</h2>
         <ol>
-          <li>Acerca de nosotros</li>
+          <li>Nosotros</li>
         </ol>
 
       </div>
@@ -28,14 +28,18 @@
           </div>
           <div class="col-lg-8">
             <div class="content ps-lg-5">
-              <h1>Desarrollo Web Personalizado</h1>
-              <p>
-                Lleva tu Negocio al Mundo Digital con una Página Web a la Medida.
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle-fill"></i> Creación de una página web y presencia en línea</li>
-                <li><i class="bi bi-check-circle-fill"></i> Implementación de estrategias de comercio electrónico</li>
-                <li><i class="bi bi-check-circle-fill"></i> Desarrollo de estrategias de marketing digital</li>
+              <ol>
+                <h2>Nuestros Valores</h2>
+              </ol>
+              
+               <ul>
+                <li><i class="bi bi-check-circle-fill" style="text-align: justify;"></i> <strong>Calidad:</strong> Compromiso con la entrega de servicios y soluciones de desarrollo web de alta calidad, cumpliendo con los estándares más exigentes y buscando la excelencia en cada proyecto.</li>
+                <li><i class="bi bi-check-circle-fill" style="text-align: justify;"></i><strong> Innovación:</strong> Promover la creatividad y la innovación en el desarrollo web, adoptando nuevas tecnologías y tendencias para ofrecer soluciones modernas y vanguardistas.</li>
+                <li><i class="bi bi-check-circle-fill" style="text-align: justify;"></i> <strong>Orientación al cliente:</strong> Enfocarse en las necesidades del cliente y brindar un servicio personalizado y adaptado a cada cliente. Escuchar activamente, comprender sus objetivos y desafíos, y ofrecer soluciones que los ayuden a alcanzar el éxito.</li>
+                {{-- <li><i class="bi bi-check-circle-fill"></i> Colaboración: Fomentar un ambiente de trabajo colaborativo, tanto internamente con el equipo de desarrollo web como con los clientes y socios comerciales. Trabajar en equipo para lograr los mejores resultados y aprovechar el conocimiento colectivo.</li> --}}
+                <li><i class="bi bi-check-circle-fill"style="text-align: justify;"></i> <strong>Confianza y transparencia:</strong> Establecer relaciones basadas en la confianza mutua, la honestidad y la transparencia. Cumplir con los compromisos asumidos, ser claros en la comunicación y mantener la confidencialidad de la información del cliente.</li>
+                {{-- <li><i class="bi bi-check-circle-fill"></i> Adaptabilidad: Ser flexible y adaptarse rápidamente a los cambios y desafíos del entorno digital en constante evolución. Estar dispuestos a aprender, mejorar y ajustar las estrategias y soluciones según las necesidades cambiantes del mercado.</li> --}}
+                <li><i class="bi bi-check-circle-fill"style="text-align: justify;"></i><strong> Responsabilidad social y ética: </strong>Actuar de manera ética y responsable, considerando el impacto social y medioambiental de las soluciones y servicios de desarrollo web. Cumplir con las leyes y regulaciones pertinentes y actuar de manera ética en todas las interacciones comerciales.</li>
               </ul>
             </div>
           </div>
@@ -49,7 +53,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Por qué elegirnos</h2>
+          <h2>Nosotros</h2>
 
         </div>
 
@@ -63,25 +67,26 @@
 
                 <div class="swiper-slide">
                   <div class="item">
-                    <h3 class="mb-3">Te ofrecemos nuetro mejor servicio</h3>
-                    <h4 class="mb-3">Cuales serian las garantías para contar con una página wed para tu negocio.</h4>
-                    <p>No pierdas la oportunidad de destacar en el mercado digital. Permítenos crear una página web que refleje la esencia de tu negocio, te ayude a alcanzar tus metas y genere resultados tangibles. ¡Contáctanos hoy mismo para dar el primer paso hacia una presencia en línea exitosa y rentables!</p>                  </div>
-                </div><!-- End slide item -->
-
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Te ayudamos</h3>
-                    <h4 class="mb-3">A tener una presencia en línea sólida es esencial para el crecimiento y el éxito de cualquier negocio.</h4>
-                    <p>Una página web bien diseñada y funcional puede abrir nuevas puertas de oportunidad, aumentar la visibilidad de tu marca y atraer a un público más amplio.</h4>
-                    <p>Dolorem quia fuga consectetur voluptatem. Earum consequatur nulla maxime necessitatibus cum accusamus. Voluptatem dolorem ut numquam dolorum delectus autem veritatis facilis. Et ea ut repellat ea. Facere est dolores fugiat dolor.</p>
+                    <h3 class="mb-3">Misión</h3>
+                    <p>Nuestra misión es brindar soluciones de desarrollo web creativas y personalizadas que ayuden a 
+                      nuestros clientes a alcanzar sus metas en línea. Nos esforzamos por ofrecer servicios de alta calidad, 
+                      enfocándonos en la satisfacción del cliente, la innovación tecnológica y la entrega oportuna de proyectos. 
+                      Trabajamos en estrecha colaboración con nuestros clientes para comprender sus necesidades y superar sus expectativas, 
+                      brindando soluciones web que impulsen su éxito.
+                    </p>
                   </div>
                 </div><!-- End slide item -->
 
                 <div class="swiper-slide">
                   <div class="item">
-                    <h3 class="mb-3">¿Por qué deberías considerar invertir en una página web?</h3>
-                    <h4 class="mb-3">No hay límites geográficos, lo que significa que puedes expandir tu negocio más allá de las fronteras locales y alcanzar nuevos mercados.</h4>
-                    <p>Con nuestra experiencia y conocimiento en desarrollo web, podemos crear una página web única y a medida que refleje la esencia de tu negocio y atraiga a tu público objetivo. Nuestro enfoque personalizado nos permite entender tus necesidades específicas y trabajar en estrecha colaboración contigo para desarrollar una solución que se adapte perfectamente a tus objetivos.</p>
+                    <h3 class="mb-3">Visión</h3>
+                    <p>Nuestra visión es convertirnos en un líder reconocido en el campo del desarrollo web, ofreciendo soluciones 
+                      vanguardistas y de vanguardia que impulsen el crecimiento y la presencia en línea de nuestros clientes. 
+                      Buscamos ser una referencia en términos de calidad, creatividad e innovación en el desarrollo web, 
+                      estableciendo relaciones sólidas y duraderas con nuestros clientes basadas en la confianza mutua y la 
+                      excelencia en el servicio. Aspiramos a mantenernos actualizados con las últimas tecnologías y tendencias 
+                      en el ámbito web para seguir brindando soluciones eficientes y efectivas.
+                    </p>
                   </div>
                 </div><!-- End slide item -->
 
@@ -101,7 +106,7 @@
     <section id="team" class="team">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Grupo de trabajo</h2>
+          <h2>Grupo de Trabajo</h2>
         </div>
 
         <div class="row gy-4">
@@ -120,7 +125,7 @@
                 <h4>Geovanni Pérez Polo</h4>
                 <br>
                 <h4>Perfil</h4>
-                <span>Desarrollador Wed</span>
+                <span>Desarrollador Web</span>
                 <span>Estudiante Ingeniería de Sistemas</span>
                 <span>Diplomado en PHP</span>
                 <span>Diplomado en JAVA</span>
@@ -143,7 +148,7 @@
               </div>
               <div class="member-info">
                 <h4>Perfil</h4>
-                <span>Desarrollador Wed</span>
+                <span>Desarrollador Web</span>
               </div>
               
             </div>

@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+@extends('head')
 
-    @extends('head')
+<br><br><br><br><br><br>
+<body class="page-index">
     @include('header')
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<br><br><br><br>
-
-
-<body class="fondo-admin">
-    <section  id="listado" class="listado d-flex align-items-center">
+    <section  id="listado" class="listado d-flex align-items-center" class="fondo-admin">
         <div class="container">
             <div class="rwo">
                 <div class="col-xl-12">
@@ -25,6 +15,8 @@
                                 <th>Correo Electrónico</th>
                                 <th>Empresa</th>
                                 <th>Comentario</th>
+                                <th>Editar</th>
+                                <th>Eliminar</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -38,8 +30,9 @@
                                 </tr>
                             @endforeach
                         </tbody>
+                        
                     </table>
-                </div>
+              </div>
             </div>
         </div>
     </section>  
@@ -55,19 +48,22 @@
         </div>
     </section>  
     
+    @include('footer')
+
     <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+    <div id="preloader"></div>
+  
+    <!-- Vendor JS Files -->
+    <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
+  
+    <!-- Template Main JS File -->
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
 </body>
 </html>

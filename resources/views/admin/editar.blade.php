@@ -56,7 +56,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
           
-            <form action="/clientes" method="POST" role="form" class="php-email-form">
+            <form action="{{ route('admin.destroy', $cliente->id) }}" method="post">
               @csrf
               <div class="row">
                 <div class="col-md-6 form-group">
@@ -79,8 +79,10 @@
               </div>
 
               <div class="text-center">
-                <button id="submit-button" type="submit">Enviar Mensaje</button>
-                <div id="mensaje-guardado" class="mensaje-guardado oculto"></div>
+                @method('delete')
+                <button type="submit" onclick="return confirm('¿Estás seguro de eliminar este cliente?')">Eliminar</button>
+                {{-- <button id="submit-button" type="submit">Enviar Mensaje</button>
+                <div id="mensaje-guardado" class="mensaje-guardado oculto"></div> --}}
               </div>
              
               </form>

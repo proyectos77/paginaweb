@@ -5,24 +5,22 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-8 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span>WebTech Solutions</span>
+            <a href="mi-ruta" class="logo d-flex align-items-center">
+              <span>Crear System
+              </span>
             </a>
-            <p style="text-align: justify;"> WebTech Solutions es una empresa líder en el desarrollo web y soluciones digitales. Nuestro enfoque se basa en brindar 
+            <p style="text-align: justify;"> Crear System es una empresa líder en el desarrollo web y soluciones digitales. Nuestro enfoque se basa en brindar 
               a nuestros clientes las herramientas y tecnologías más innovadoras para crear una presencia en línea exitosa y
-               rentable. <br><br>
+               rentable.
                Con un equipo de expertos en desarrollo web y diseño creativo, ofrecemos soluciones personalizadas 
-               que se adaptan a las necesidades únicas de cada negocio. <br> <br>En WebTech Solutions tenemos la experiencia y el 
-               conocimiento para llevar tu visión digital al siguiente nivel. <br> <br>Nuestro compromiso es ofrecer soluciones de
-                calidad, centradas en el cliente y con un enfoque en la excelencia tecnológica. <br> <br> Con WebTech Solutions, 
-                tu presencia en línea estará en buenas manos.
+               que se adaptan a las necesidades únicas de cada negocio. 
             </p>
-            {{-- <div class="social-links d-flex  mt-3">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
               <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div> --}}
+            </div>{{-- <div class="social-links d-flex  mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+             
           </div>
 {{-- 
           <div class="col-lg-2 col-6 footer-links">
@@ -48,13 +46,13 @@
           </div> --}}
 
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contactos</h4>
+            <h4>Contacto</h4>
             <a href="https://api.whatsapp.com/send?phone=573124926898" target="_blank" class="whatsapp-floating" class="whatsapp-logo">
               <img src="assets/img/inicio/logo-whatssapp.jpg" alt="WhatsApp Logo">
             </a>
             <p>
               Geovanni Perez polo<br>
-              Colombia <br>
+              Bogotá D.C -  Colombia<br> 
                <br><br>
               <strong>Telefono:</strong> +57 312-4926-898<br>
               <strong>Email:</strong> pjhovanysperezpolo@gmail.com<br>

@@ -6,6 +6,7 @@ use App\Models\Contacto;
 use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\AdminController;
+use RealRashid\SweetAlert\Facades\Alert;
 
 
 /*
@@ -20,6 +21,7 @@ use App\Http\Controllers\AdminController;
 */
 
 Route::get('/', function () {
+    Alert::success('guardado', 'los datos se guardaron correctamente');
     return view('welcome');
 });
 
@@ -35,4 +37,9 @@ Route::view('/about', 'about')->name('about');
 Route::view('/services', 'services')->name('services');
 Route::view('/portfolio-details', 'portfolio-details')->name('portfolio-details');
 Route::view('/contact', 'contact')->name('contact');
-//Route::view('/testimonio', 'testimonio')->name('testimonio');
+Route::view('/editar', 'editar')->name('editar');
+
+//rutas del crud
+Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
+Route::put('/admin/{id}', [AdminController::class, 'update'])->name('admin.update');
+Route::delete('/admin/{id}', [AdminController::class, 'destroy'])->name('admin.destroy');

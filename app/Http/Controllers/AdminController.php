@@ -21,4 +21,31 @@ class AdminController extends Controller
 
     }
 
+    public function update(Request $request, $id)
+    {
+        $cliente = Cliente::findOrFail($id);
+
+        $data = $request->validate([
+            'nombre' => 'required|string|max:200',
+            'telefono' => 'nullable|string|max:20',
+            'correo_electronico' => 'required|email|unique:clientes|max:100',
+            'empresa' => 'nullable|string|max:100',
+            'comentario' => 'nullable|string|max:200',
+        ]);
+
+        $cliente->update($data);
+
+        return redirect()->route('admin.index')->with('success', 'Cliente actualizado correctamente');
+    }
+
+    public function destroy($id)
+    {
+        $cliente = Cliente::findOrFail($id);
+        $cliente->delete();
+
+        return redirect()->route('admin.index')->with('success', 'Cliente eliminado correctamente');
+    }
+
+    
+
 }

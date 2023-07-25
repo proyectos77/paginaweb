@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Cliente;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class ClienteController extends Controller
 {
@@ -23,7 +24,7 @@ class ClienteController extends Controller
     public function store(Request $request)
     {
         // Validar los datos del formulario
-        //dd('hola');
+        
         $validatedData = $request->validate([
             'nombre' => 'required|string|max:200',
             'telefono' => 'nullable|string|max:20',
@@ -40,16 +41,16 @@ class ClienteController extends Controller
         $cliente->correo_electronico = $validatedData['correo_electronico'];
         $cliente->empresa = $validatedData['empresa'];
         $cliente->comentario = $validatedData['comentario'];
-        $cliente->save();
-        //$mensaje = 'Cliente creado correctamente ¡Gracias!';
-
-
-
-        // Redirigir o retornar una respuesta, según tus necesidades
-        return 'Cliente creado correctamente';
-        //return view('contact', compact('mensaje'));
         
 
+        if(!$cliente->save()){
+            Alert::error('Error ', 'ocurrio un erro al hacer registro en la base de datos');
+
+        }
+        Alert::success('Guardado', 'El mensaje se envió con éxito. Nos pondremos en contacto en las próximas horas.');
+        return redirect()->route('contact');
+
+        
     }
 
    
