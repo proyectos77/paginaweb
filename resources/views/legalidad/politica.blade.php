@@ -34,6 +34,11 @@
                 <h2 style="text-align: justify;">Bienvenido a [Nombre de tu Proyecto]. Estos términos y condiciones describen las reglas y 
                     regulaciones para el uso del sitio web de [Nombre de tu Empresa], ubicado en [URL de tu Sitio].</h2>
               </ol>
+
+              <ol>
+                <h2 style="text-align: justify;">Bienvenido a [Nombre de tu Proyecto]. Estos términos y condiciones describen las reglas y 
+                    regulaciones para el uso del sitio web de [Nombre de tu Empresa], ubicado en [URL de tu Sitio].</h2>
+              </ol>
               
                <ul>
                 <li><i class="bi bi-check-circle-fill" style="text-align: justify;"></i> <strong>1. Aceptación de los Términos:</strong> Al acceder a este sitio web, asumimos que aceptas estos términos y condiciones.</li>
