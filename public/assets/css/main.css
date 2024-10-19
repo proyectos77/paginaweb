@@ -2066,9 +2066,11 @@ h1 {
 }
 
 .footer .footer-content {
-  background-color: #f7f9fc;
+  /*background-color: #f7f9fc;*/
+  background: #2c9090;
   background-size: contain;
   padding: 60px 0 30px 0;
+
 }
 
 .footer .footer-content .footer-info {
@@ -2107,7 +2109,7 @@ h1 {
   display: inline-block;
   width: 32px;
   height: 32px;
-  color: rgba(27, 47, 69, 0.5);
+  color: rgba(69, 27, 50, 0.5);
   margin-right: 10px;
   transition: 0.3s;
   display: flex;
@@ -2125,7 +2127,7 @@ h1 {
 .footer .footer-content h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #29486a;
+  color: #1968bd;
   position: relative;
   padding-bottom: 12px;
 }
@@ -2148,7 +2150,7 @@ h1 {
 }
 
 .footer .footer-content .footer-links ul li {
-  padding: 10px 0;
+  padding: 5px 0;
   display: flex;
   align-items: center;
 }
@@ -2176,7 +2178,7 @@ h1 {
 
 .footer .footer-legal .copyright{ /*estilo pie de pagina*/
   background: #2c9090;
-  padding: 30px 0;
+  padding: 7px 0;
   text-align: center;
   color: var(--color-secondary);
   color: white;
@@ -2185,10 +2187,9 @@ h1 {
 
 .whatsapp-floating{ /*propiedades del logo de whatsapp */
   position: fixed;
-        bottom: 10px;
-        right: 10px;
-        z-index: 9999;
-       
+        bottom: 5px;
+        right: 5px;
+        z-index: 9999;      
 
 }
 .whatsapp-logo {
@@ -2204,16 +2205,16 @@ h1 {
   color: #f3f9f8;
 
 }
-/* Estilo para la tlaba  */
+/* Estilo para la tabla  */
 .table { 
   width: 100%;
   border-collapse: collapse;
-  
+    
 }
 
 
-/* Estilo para la tlaba tr y td */
-.table th,
+/* Estilo para la tabla tr y td */
+
 .table td {
   border: 1px solid #0f3b8b;
   padding: 8px;
@@ -2221,9 +2222,11 @@ h1 {
 
 /* Estilo para la fila de encabezado */
 .table thead tr {
-  background-color: #094646;
+  background-color: #d1e3e3;
   text-align: center;
+ 
 }
+
 
 .fondo-admin{
   background-color: #edf3f38c; /* Cambia el color a tu preferencia */
@@ -2238,5 +2241,12 @@ h1 {
 }
 p{
   text-align: justify;
-  s
 }
+
+input{
+  background-color: #1f98d1;
+  border-radius: 5px;
+}
+
+/*estilo de paginacion de la vista admin*/ 
+

@@ -27,11 +27,10 @@ class ClienteController extends Controller
         
         $validatedData = $request->validate([
             'nombre' => 'required|string|max:200',
-            'telefono' => 'nullable|string|max:20',
+            'telefono' => 'required|string|max:20', // Ahora es obligatorio
             'correo_electronico' => 'required|email|unique:clientes|max:100',
-            'empresa' => 'nullable|string|max:100',
-            'comentario' => 'nullable|string|max:200',
-
+            'empresa' => 'required|string|max:100', // Ahora es obligatorio
+            'comentario' => 'required|string|max:200', // Ahora es obligatorio
         ]);
 
         // Crear un nuevo cliente
@@ -44,14 +43,12 @@ class ClienteController extends Controller
         
 
         if(!$cliente->save()){
-            Alert::error('Error ', 'ocurrio un erro al hacer registro en la base de datos');
-
+            Alert::error('Error', 'Ocurrió un error al hacer el registro en la base de datos');
+        } else {
+            Alert::success('Guardado', 'El mensaje se envió con éxito. Nos pondremos en contacto en las próximas horas.');
         }
-        Alert::success('Guardado', 'El mensaje se envió con éxito. Nos pondremos en contacto en las próximas horas.');
+    
         return redirect()->route('contact');
-
-        
     }
-
    
 }

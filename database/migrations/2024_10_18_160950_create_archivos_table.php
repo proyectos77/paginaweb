@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateContactosTable extends Migration
+class CreateArchivosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,9 @@ class CreateContactosTable extends Migration
      */
     public function up()
     {
-        Schema::create('contactos', function (Blueprint $table) {
+        Schema::create('archivos', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
-            $table->string('telefono')->nullable();
-            $table->string('correo_electronico')->unique();
-            $table->string('empresa')->nullable();
-            $table->string('comentario')->nullable();
+            $table->string('ruta'); // Para almacenar la ruta del archivo
             $table->timestamps();
         });
     }
@@ -31,6 +27,6 @@ class CreateContactosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('contactos');
+        Schema::dropIfExists('archivos');
     }
 }

@@ -16,21 +16,20 @@
         </ol>
 
       </div>
-    </div><!-- End Breadcrumbs -->
+    </div>
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container position-relative" data-aos="fade-up">
-
         <div class="row gy-4 d-flex justify-content-end">
-
+          <!-- informacion de contacto -->
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
 
             <div class="info-item d-flex">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h4>Ubicación:</h4>
-                <p>Geovanni Pérez - <br> Bogotá D.C - Colombia</p>
+                <p>Geovanni Pérez Polo<br> Bogotá D.C - Colombia</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -49,51 +48,58 @@
                 <h4>Llamar:</h4>
                 <p>+57- 312-492-6898</p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
           </div>
 
-          
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
-          
-            <form action="/clientes" method="POST" role="form" class="php-email-form">
-              @csrf
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>   
+        
+            <!-- formualrio de contacto -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+              <div class="container mt-5">
+              <div class="card ">
+                <div class="card-header text-center" style="background-color: #2c9090; color: white; ">
+                    <h4 class="mb-0 ">Formulario de Registro</h4>
                 </div>
-                <div class="col-md-6 form-group">
-                  <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su número telefono" required>
-                </div>
+              <div class="card-body" style="background-color: #2c9090; color: white;" >
+                <form action="/clientes" method="POST" role="form" class="php-email-form" >
+                  @csrf
+                  <div class="row">
+                      <div class="col-md-6 form-group" >
+                          <div >Nombres y Apellidos</div>
+                          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required style="border-radius: 8px;">   
+                      </div>
+                      
+                      <div class="col-md-6 form-group">
+                          <div>Teléfono</div>
+                          <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" required style="border-radius: 8px;">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-6 form-group mt-3 mt-md-0">
+                          <div>Correo Electrónico</div>
+                          <input type="email" class="form-control" id="correo_electronico" name="correo_electronico" placeholder="Ingrese su Email" required style="border-radius: 8px;">
+                      </div>
+                      <div class="col-md-6 form-group">
+                          <div>Nombre de la Empresa</div>
+                          <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Ingrese Nombre de la Empresa" required style="border-radius: 8px;">
+                      </div>
+                  </div>
+                  <div class="form-group mt-3">
+                      <div>Escriba su Comentario </div>
+                      <textarea class="form-control" id="comentario" name="comentario" rows="2" placeholder="Escriba un comentario" required style="border-radius: 8px;"></textarea>
+                  </div>
+                  <div class="text-center">
+                      <button id="submit-button" class="btn btn-primary" type="submit">Guardar</button>
+                      <div id="mensaje-guardado" class="mensaje-guardado oculto"></div>
+                  </div>
+                </form>
               </div>
-              <div class="row">
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" id="correo_electronico" name="correo_electronico" placeholder="Ingrese su Email" required>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Ingrese Nombre de la Empresa" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" id="comentario" name="comentario" rows="5" placeholder="Escriba un comentario" required></textarea>
-              </div>
-
-              <div class="text-center">
-                <button id="submit-button" type="submit">Enviar Mensaje</button>
-                <div id="mensaje-guardado" class="mensaje-guardado oculto"></div>
-              </div>
-             
-              </form>
-            
-
-          </div><!-- End Contact Form -->
-
+            </div>
+            </div>
+          </div>
         </div>
-
       </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
+    </section>
+  </main>
 
   @include('footer')
 
@@ -115,7 +121,7 @@
   <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
    <!-- Importar el archivo JavaScript -->
-
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    @include('sweetalert::alert')
 </body>
 

@@ -3,10 +3,13 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MiControlador;
 use App\Models\Contacto;
+use App\Models\Archivo;
+use App\Http\Controllers\ChatController;
 use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\AdminController;
 use RealRashid\SweetAlert\Facades\Alert;
+
 
 
 /*
@@ -21,7 +24,7 @@ use RealRashid\SweetAlert\Facades\Alert;
 */
 
 Route::get('/', function () {
-    Alert::success('guardado', 'los datos se guardaron correctamente');
+    //Alert::success('guardado', 'los datos se guardaron correctamente');
     return view('welcome');
 });
 
@@ -39,7 +42,25 @@ Route::view('/portfolio-details', 'portfolio-details')->name('portfolio-details'
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/editar', 'editar')->name('editar');
 
+// vista de información legal de la pagina
+Route::view('/terminos', 'legalidad.terminos')->name('legalidad.terminos');
+Route::view('/politica', 'legalidad.politica')->name('legalidad.politica');
+
 //rutas del crud
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
 Route::put('/admin/{id}', [AdminController::class, 'update'])->name('admin.update');
 Route::delete('/admin/{id}', [AdminController::class, 'destroy'])->name('admin.destroy');
+
+
+//ruta subir archivo
+Route::post('/subir',[AdminController::class, 'subir'])->name('subir');
+// Ruta para la vista 'about'
+Route::get('/about', [AdminController::class, 'about'])->name('about');
+
+
+//ruta del chatbox
+Route::post('/chat/send', [ChatController::class, 'sendMessage'])->name('chat.send');
+
+
+
+
